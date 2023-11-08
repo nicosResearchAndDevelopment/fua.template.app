@@ -3,7 +3,7 @@ const
     is     = require('@nrd/fua.core.is'),
     tty    = require('@nrd/fua.core.tty');
 
-module.exports = async function ({server: {app, io}}, config) {
+module.exports = async function ({server: {app, io}, ...config}) {
 
     app.use(function (request, response, next) {
         tty.log.request(request);

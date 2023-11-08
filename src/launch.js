@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 
 const
-    path = require('path'),
-    App  = require('@nrd/fua.agent.app'),
-    app  = require('./app.js');
+    path  = require('path'),
+    App   = require('@nrd/fua.agent.app'),
+    Agent = require('./code/agent.js');
 
 App.launch({
+    app: require('./app.js'),
+    async initialize(config) {
+        await Agent?.initialize?.(config.agent);
+        return {agent: Agent};
+    },
     space:  {
         context: {},
         store:   {
@@ -36,6 +41,5 @@ App.launch({
         app:     true,
         io:      true,
         session: true
-    },
-    app:    app
+    }
 });
