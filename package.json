@@ -2,21 +2,27 @@
   "name": "fua.app.template",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "bin": {
+    "fua.app.TEMPLATE": "./src/launch.js",
+    "fua.app.TEMPLATE.healthcheck": "./src/script/healthcheck.js"
+  },
   "files": [
     "src/*",
     "data/*"
   ],
   "dependencies": {
+    "@nrd/fua.agent.app": "^1.0.0",
     "@nrd/fua.core.assert": "^1.0.0",
-    "@nrd/fua.core.is": "^1.0.0"
+    "@nrd/fua.core.is": "^1.0.0",
+    "@nrd/fua.core.tty": "^1.0.0"
   },
   "devDependencies": {
     "expect": "26.x",
     "mocha": "10.x"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node src/launch.js"
   },
   "mocha": {
     "bail": false,
