@@ -3,10 +3,10 @@
 const
     path  = require('path'),
     App   = require('@nrd/fua.agent.app'),
-    Agent = require('./code/agent.js');
+    Agent = require('./app/agent.js');
 
 App.launch({
-    app: require('./app.js'),
+    app: require('./app/app.js'),
     async initialize(config) {
         await Agent?.initialize?.(config.agent);
         return {agent: Agent};
