@@ -22,7 +22,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "start": "node src/launch.js"
+    "start": "node src/launch.js",
+    "healthcheck": "node src/script/healthcheck.js"
   },
   "mocha": {
     "bail": false,
