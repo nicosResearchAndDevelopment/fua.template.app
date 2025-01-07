@@ -1,12 +1,12 @@
 const
-    expect           = require('expect'),
-    {describe, test} = require('mocha'),
-    app              = require('../src/app.js');
+  expect = require('expect'),
+  { describe, test } = require('mocha'),
+  app = require('../src/app.js');
 
-describe('app.template', function () {
+describe('template.app', function () {
 
-    test('develop', async function () {
-        console.log(app);
-    });
+  test('develop', async function () {
+    console.log(app);
+  });
 
 });

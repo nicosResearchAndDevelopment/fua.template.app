@@ -1,0 +1,1 @@
+// SEE: @fua/template.agent
