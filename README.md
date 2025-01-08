@@ -1,1 +1,1 @@
-# @fua/template.app
+# @fua/app.TEMPLATE
