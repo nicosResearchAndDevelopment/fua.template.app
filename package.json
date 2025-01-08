@@ -1,10 +1,10 @@
 {
-  "name": "@fua/template.app",
+  "name": "@fua/app.TEMPLATE",
   "version": "0.0.0-dev",
   "description": "",
   "bin": {
-    "fua.app.template": "./src/launch.js",
-    "fua.app.template.healthcheck": "./src/script/healthcheck.js"
+    "fua.app.TEMPLATE": "./src/launch.js",
+    "fua.app.TEMPLATE.healthcheck": "./src/script/healthcheck.js"
   },
   "files": [
     "src/*",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:nicosResearchAndDevelopment/fua.template.app.git"
+    "url": "ssh://git@github.com:nicosResearchAndDevelopment/fua.app.TEMPLATE.git"
   },
   "author": "Simon Petrac <pfoerdie@gmail.com>",
   "license": "MIT"
