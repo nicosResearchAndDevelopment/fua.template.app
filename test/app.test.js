@@ -3,7 +3,7 @@ const
   { describe, test } = require('mocha'),
   app = require('../src/app.js');
 
-describe('template.app', function () {
+describe('app.TEMPLATE', function () {
 
   test('develop', async function () {
     console.log(app);
